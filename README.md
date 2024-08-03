@@ -59,3 +59,64 @@ elif x<y:
     print("x is less than y")
 else :
     print("x equals to y")
+    
+#or function
+p = int(input("Enter digit for p "))
+q = int(input("Enter digit for q "))
+if p>q or p<q :
+    print("x isnt equals to y")
+else :
+    print("x equals to y")
+    
+#simple way
+a = int(input("Whats a? "))
+b = int(input("whats b? "))
+if a!=b:
+    print("a isnt equal to b")
+else: 
+    print("a equals to b")
+
+#GRADE
+score = int(input("Score/Mark: "))
+if score>=90 and score<=100:
+    print("Grade : A")
+elif score>=80 and score<90:
+    print("Grade : B")
+elif score>=70 and score<80:
+    print("Grade : C")
+elif score>=60 and score<70:
+    print("Grade : D")
+elif score>=50 and score<60:
+    print("Grade E")
+else:
+    print("Grade : F")
+
+#easy way: 
+mark = int(input("Mark : "))
+if 90<=mark< 100:
+    print("Grade : A")
+elif 80<=mark<90:
+    print("Grade : B")
+elif 70<mark<80:
+    print("Grade : C")
+elif 60<mark<70:
+    print("Grade : D")
+elif 50<mark<60:
+    print("Grade E")
+else:
+    print("Grade : F")
+    
+#another way
+number = int(input("Number: "))
+if number >= 90:
+    print("Grade : A ")
+if number >= 80:
+    print("Grade : B ")
+if number >= 70:
+    print("Grade : C ")
+if number >= 60:
+    print("Grade : D ")
+if number >= 50:
+    print("Grade : E ")
+else :
+    print("Grade : F ")
