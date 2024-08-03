@@ -3,7 +3,79 @@ Learning coding as well as saving it for others :3
 
 
 #start
-name = input("Whats Your Name? ").strip().title()
+#Ask user for their name
+name = input("whats your name? ")
+
+#say hello to user
+print('Hello, "friend" ' +name) #connecting multiple arguments
+print("Hello,",name, sep='')
+print("Hello, ", end="")
+print(name)
+"""
+comment 
+"""
+#escape characters and double or single quotation
+"""
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt)
+print("hello, \"friend\"")
+print('Hello, "friend"')
+print('Hello, "friend"')
+#format string or "f" str
+print(f"Hello, {name}")
+text = "abir"
+print(f"Hello, \"dear\" {text}" ) 
+"""
+#remove whitespace from str
+username = input("Username  please: ")
+username = username.strip()
+print("The name of the user is :",username)
+print(f"The name of the user is: {username}")
+#capitalize Username
+username = username.capitalize()
+print(f"User is called {username}")
+
+#title
+username = username.title()
+print(f"User is {username}")
+
+""" #ALL IN ONE
+tname = input("")
+tname = tname.strip()
+tname = tname.capitalize()
+tname = tname.title()
+print(f"Tname is {tname}")
+"""
+#Remove whitespace from str and title user's name 
+username = username.strip().title()
+print(f"username is {username}")
+#simpler procedure
+u_name = input("Write your name: ").strip().title()
+print(f"hello, {u_name}")
+
+#Split user's name into first and last name
+first, last = username.split(" ")
+print(f"Your first name is {first} right?" )
+print(f"your last name is {last} right?")
+
+
+#def 
+def hello(to="World"):
+    print("hello", to)
+hello()
+name = input("What's Your name? ").title()
+hello(name)
+
+#stabdard way
+#def main(): #just to make it easier for anyone to understnad
+    name = input("whats your name? ")
+    hello(name)
+    
+def hello(to="world"):
+    print("hello ",to)
+main()
+
+#name = input("Whats Your Name? ").strip().title()
 print(f"Hello, {name}")
 """first,last = name.split(" ")
 print(f"First name is {first}")
@@ -24,14 +96,44 @@ def Hello(to="world"):
 main()
 
 #Calc
-def main():
+
+#int
+x = input("Enter the value of x : ")
+y = input("Enter the value of y : ")
+z = int(x) + int(y)
+print(z)
+#standard way
+p = int(input("Whats p? "))
+q = int(input("whats q? "))
+print(p + q)
+#complex procedure
+print(int(input("Value of A : ")) + int(input("Value of B : ")))
+#float
+m = float(input("Value of m : "))
+n = float(input("Value of n : "))
+o = (m + n)
+o = round(m + n) #it will round the number up to the nearest integer
+#print(o)
+print(f"{o:,}")#just to format the number.
+"""m = input("Dial the value of m : ")
+n = input("Dial the value of n : ")
+print(float(m) + float(n))
+#divide
+#o = (m/n)
+o = round(m/n,2)#used 2 after "," just to set how many digits will be shown after the decimal point
+print(o)"""
+#different way
+o = m / n
+print(f"{o:.2f}")
+
+#def main():
     p = int(input("Value of p : "))
     print(f"p squared is : ",square(p))
 def square(q):
     return q*q
 main()
 
-def main():
+#def main():
     x = int(input("Enter a value for x :"))
     print(f"x square is :", square(x))
 
@@ -41,7 +143,7 @@ main()
 squared = 2 ** 2
 print(squared)
 
-def main():
+#def main():
     p = int(input("value of p : "))
     print(f"p squared is : ",squared(p))
 def squared(n):
