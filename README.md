@@ -120,3 +120,92 @@ if number >= 50:
     print("Grade : E ")
 else :
     print("Grade : F ")
+
+
+#Module
+x = int(input("Whats x? "))
+
+if x % 2 == 0:
+    print(" The number is Even")
+else:
+    print("The number is Odd")
+    
+ 
+ #by fuction def
+def main():
+    a = int(input("Whats a? "))
+    if is_even(a):
+        print("Even")
+    else :
+        print("Odd")
+def is_even(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+main()
+
+#more pythonic way
+def main():
+    p = int(input("Whats p? "))
+    if is_eeven(p):
+        print("Even")
+    else :
+        print("Odd")
+def is_eeven(n):
+    return True if n%2 == 0 else False
+main()
+
+#better / elegant way
+def main():
+    b = int(input("Whats b? "))
+    if is_even(b):
+        print("Even")
+    else :
+        print("Odd")
+def iss_even(n):
+    return n%2==0
+main()
+
+
+##Harrypotter Based
+name = input("What's Your name? ").capitalize()
+
+if name=="Harry" or name=="Hermoine" or name=="Ron":
+    print("Gryffindor")
+elif name=="Draco":
+    print("Slytherin")
+else:
+    print("Who?")
+    
+#mactch
+name = input("Whats your name? ").capitalize()
+match name:
+    case "Harry" | "Hermione" | "Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("who?")
+
+#*LOOP
+x = 3
+while x != 0:
+    print("meow")
+    x = x-1
+    
+i = 1
+while i < 6:
+    print("Hello")
+    i +=1 
+    
+p = 3
+while p!=0:
+    print("Meow")
+    p = p-1
+    
+q = 1
+while q<6:
+    print("HI!")
+    q = q+1
+    #or q +=1
