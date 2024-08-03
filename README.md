@@ -311,3 +311,50 @@ while q<6:
     print("HI!")
     q = q+1
     #or q +=1
+
+
+#*For loop
+ #Basic way for loop   
+for a in [0, 1, 2]:
+    print("Meow")
+
+#standard way
+for b in range(3):
+    print("YO fiend")
+
+#pythonic way
+print(f"Meow\n" *3, end="")
+
+#*
+while True:
+    n = int(input("What's n? "))
+    if n<0:
+        continue
+    else:
+        break
+for u in range(n):
+    print("Hai")
+    
+#TO DO SOMETHING AGAIN AND AGAIN AND AGAIn
+while True:
+    m = int(input("Whats m? "))
+    if m>0:
+        break
+for i in range(m):
+    print("Meow")
+    
+#Complicated way by defining
+def main():
+    number = get_number()
+    bark(number)
+    
+def get_number():
+    while True:
+        c = int(input("Whats c? "))
+        if c>0:
+            break
+    return c
+def bark(c):
+    for _ in range(c):
+        print("Bark")
+main()
