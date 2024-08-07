@@ -405,3 +405,39 @@ def row(width):
     print("?" *width)
 abir()
 """
+
+#Square concept
+def azowad():
+    print_square(3)
+    
+def print_square(size):
+    #For each row in square
+    for a in range(size):
+        #For each brick in row
+        for b in range(size):
+            #print brick
+            print("#", end="")
+        print()
+        
+azowad()
+    
+    
+#Easier way
+def islam():
+    print_brick(3)
+def print_brick(size):
+    for x in range(size):
+        print("#" *size)
+islam()
+    
+    
+#abstraction
+def anas():
+    n = int(input("Whats n ? "))
+    print_block(n)
+def print_block(brick):
+    for y in range(brick):
+        print_row(brick)
+def print_row(width):
+    print("#" *width)
+anas()
