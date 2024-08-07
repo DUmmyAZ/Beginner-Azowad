@@ -358,3 +358,50 @@ def bark(c):
     for _ in range(c):
         print("Bark")
 main()
+
+#*Dictionary
+
+names = {
+    "Abir " : "Savar",
+    "Azowad" : "Anandapur",
+    "Anas" : "Mirupur",
+}
+for name in names:
+    print(name, names[name], sep=" ,")
+
+#to store more details:
+students =[
+    {"name":"Azowad", "house":"Savar", "role":None},
+    {"name":"Rayhan", "house":"Savar", "role":"Defender"},
+    {"name":"Anas", "house":None, "role":"Midfielder"}
+]
+for student in students:
+    print(student["name"],student["house"], student["role"], sep=", ")
+
+
+#*Mario loop:
+"""def main():
+    print_column(3)
+    
+def print_column(height):
+    for _ in range(height):
+        print("#")
+main(
+
+def main():
+    print_row(4)
+    
+def print_row(weight):
+    for _ in range(weight):
+        print("#")
+main()
+
+
+
+#pythonic way:
+def abir():
+    row(4)
+def row(width):
+    print("?" *width)
+abir()
+"""
