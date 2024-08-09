@@ -441,3 +441,89 @@ def print_block(brick):
 def print_row(width):
     print("#" *width)
 anas()
+
+
+#*Exceptions
+try:
+    x = int(input("Whats x? "))
+    print(f"x is {x}")
+except ValueError:
+    print("x is not an integer") 
+    
+#standard 
+try:
+    n = int(input("whats n? "))
+except ValueError:
+    print("n is not an integer")
+else:
+    print(f"n is {n}")
+
+#userfriendly
+while True:
+    try:
+        m = int(input("Whats m? "))
+    except ValueError:
+        print("m is not a integer")
+    else:
+        break
+print(f"m is {m}")
+
+#other way
+while True:
+    try:
+        a = int(input("Whats a? "))
+        break
+    except ValueError:
+        print("a is not a integer")
+print(f"a is {a}")
+
+#by defining a finction
+def main():
+    b = get_int()
+    print(f"b is {b}")
+    
+def get_int():
+    while True:
+        try:
+            b = int(input("what is b? "))
+        except ValueError:
+            print("b is not an integer")
+        else:
+            return b
+main()
+
+#complex way
+def abir():
+    y = get_number()
+    print(f"y is {y}")
+def get_number():
+    while True:
+        try:
+            return int(input("whats y? "))
+        except ValueError:
+            print("y is not an integer")
+abir()
+
+#using pass statment:
+def azowad():
+    c = get_numb()
+    print(f"c is {c}")
+def get_numb():
+    while True:
+        try:
+            return int(input("whats c? "))
+        except ValueError:
+            pass
+azowad()
+
+#pythonic way
+def anas():
+    d = get_digit("Whats d? ")
+    print(f"d is {d}")
+def get_digit(promt):
+    while True:
+        try:
+            return int(input(promt))
+        except ValueError:
+            pass      
+anas()
