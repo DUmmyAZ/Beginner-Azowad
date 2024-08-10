@@ -527,3 +527,27 @@ def get_digit(promt):
         except ValueError:
             pass      
 anas()
+
+
+
+#*Libraries
+#Module
+import random
+coin = random.choice(["heads","tails"])
+print(coin)
+
+
+#using from
+from random import choice
+coinn = choice(["heads","tails"])
+print(coinn)
+
+#import random
+number = random.randint(1,20)
+print(number)
+
+#import random
+cards = ["abir","azowad","anas"]
+random.shuffle(cards)
+for card in cards:
+    print(card)
