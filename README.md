@@ -551,3 +551,46 @@ cards = ["abir","azowad","anas"]
 random.shuffle(cards)
 for card in cards:
     print(card)
+
+
+#*statistics
+import statistics
+numbers = statistics.mean([88,66])
+print(numbers)
+ 
+ #2nd way
+import statistics 
+digits = [123,111]
+print(statistics.mean(digits))
+
+#3rd way
+import statistics
+print(statistics.mean([55,32]))
+
+#*sys.argv
+"""import sys
+print("hello, my name is", sys.argv[1])
+
+#another way
+import sys
+try:
+    print("hello,", sys.argv[1])
+except IndexError:
+    print("too many arguments")
+   
+#standard way:
+import sys
+if len(sys.argv) <2:
+    print("too few arguments")
+elif len(sys.argv) > 2:
+    print("too many arguments")
+else:
+    print("Hello, my name is",sys.argv[1])
+    """
+import sys
+if len(sys.argv) < 2:
+    sys.exit("too few arguments")
+elif len(sys.argv) > 2 :
+    sys.exit("too many arguments")
+
+print("Hello, i am ",  sys.argv[1])
