@@ -627,4 +627,5 @@ from sayings import hey
 from sayings import goodbye
 
 if len(sys.argv) == 2:
+    hey(sys.argv[1])
     goodbye(sys.argv[1])
