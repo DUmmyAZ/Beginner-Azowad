@@ -594,3 +594,37 @@ elif len(sys.argv) > 2 :
     sys.exit("too many arguments")
 
 print("Hello, i am ",  sys.argv[1])
+
+
+#*cowsay
+import cowsay
+import sys
+
+if len(sys.argv) == 2 :
+    cowsay.trex("Hello, "+ sys.argv[1])
+    
+
+if len(sys.argv) == 2:
+    cowsay.cow("HELLO, " + sys.argv[1])
+
+
+#*my library
+
+#creating own library
+def main():
+    hey("world")
+    goodbye("world")
+def hey(name):
+    print("hello",name)
+def goodbye(name):
+    print(f"Goodbye, {name}")
+if __name__ == "__main__":
+    main()
+
+import sys
+#using my library
+from sayings import hey
+from sayings import goodbye
+
+if len(sys.argv) == 2:
+    goodbye(sys.argv[1])
